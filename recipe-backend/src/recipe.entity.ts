@@ -1,6 +1,10 @@
-// src/recipe.entity.ts
-
 import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
+
+interface Ingredient {
+  name: string;
+  quantity: number;
+  unit: string;
+}
 
 @Entity()
 export class Recipe {
@@ -13,5 +17,6 @@ export class Recipe {
   @Column()
   description: string;
 
-  // Add more columns as needed
+  @Column('json', { nullable: true })
+  ingredients: Ingredient[];
 }
