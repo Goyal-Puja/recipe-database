@@ -36,7 +36,7 @@ Once the application is running, you can interact with the API using HTTP reques
 
 ## API Endpoints
 1. Get all recipes
-   <pre>>GET : /api/recipes</pre>
+   <pre>GET : /api/recipes</pre>
 ![Screenshot 2024-04-21 203959](https://github.com/Goyal-Puja/recipe-database/assets/47891452/44045278-dbdf-4d54-a8f0-dc09a6f45b80)
 
 2. Get a single recipe by ID
